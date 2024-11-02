@@ -1,33 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
 import './App.css'
+// import ReuseableForm from './Components/ReuseableForm/ReuseableForm'
+// import HookForm from './Components/HookForm/HookForm'
+// import RefFrom from './Components/RefFrom/RefFrom'
+// import StatefulForm from './Components/StatefulForm/StatefulForm'
+// import SimpleForm from './Components/SimpleForm/SimpleForm'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // const handleSignUpSubmit = data =>{
+  //   console.log('sign up data',data);
+  // }
+  
+  // const handleUpdateProfile = data =>{
+  //   console.log('update profile', data)
+  // }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className='text-2xl font-bold'>Form Master</h1>
+      {/* <SimpleForm></SimpleForm> */}
+      {/* <StatefulForm></StatefulForm> */}
+      {/* <RefFrom></RefFrom> */}
+      {/* <HookForm></HookForm> */}
+      {/* <ReuseableForm formTitle={'Sign Up'} handleSubmit={handleSignUpSubmit}>
+        <div>
+          <h2>Sign UP</h2>
+          <p>Please sign up right now</p>
+        </div>
+      </ReuseableForm>
+      <ReuseableForm 
+      formTitle={'Profile Update'} 
+      handleSubmit={handleUpdateProfile}
+       submitButtonText='Update'>
+        <div>
+          <h2>Update Profile</h2>
+          <p>ALways keep updated </p>
+        </div>
+       </ReuseableForm> */}
     </>
   )
 }
